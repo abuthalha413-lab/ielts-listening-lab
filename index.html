@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IELTS Listening Lab</title><link rel="stylesheet" href="styles.css"></head><body><header><div class="brand">IELTS Listening <span>LAB</span></div><nav><button data-page="home">Home</button><button data-page="practice">Practice Test</button><button data-page="mytest">My Test 1</button><button data-page="tips">Tips</button></nav></header><main>
+<section id="home" class="page active"><div class="hero"><div><p class="eyebrow">IELTS • LISTENING PRACTICE</p><h1>Build your listening score with focused practice.</h1><p>Practice a complete original 40-question test, track your results, and use your own uploaded audio in the same place.</p><button class="primary" data-page="practice">Start 40-question test</button></div><div class="hero-card"><div class="big">40</div><div>questions</div><div class="mini">4 sections • timer • instant score</div></div></div><div class="cards"><article><b>40 Questions</b><p>Four IELTS-style sections with original questions.</p></article><article><b>Instant marking</b><p>See correct answers and your percentage immediately.</p></article><article><b>Progress</b><p>Your recent scores are saved in this browser.</p></article></div></section>
+<section id="practice" class="page"><div class="topline"><div><p class="eyebrow">ORIGINAL PRACTICE TEST</p><h2>Listening Test 1</h2><p>Answer all 40 questions. Use the built-in script player or read the script after finishing.</p></div><div class="timer" id="timer">30:00</div></div><div class="controls"><button class="secondary" id="playScript">▶ Play audio script</button><button class="secondary" id="pauseScript">Ⅱ Pause</button><button class="secondary" id="resetTest">↻ Reset</button></div><div id="questions"></div><div class="submitbar"><button class="primary" id="submitTest">Submit test</button><span id="submitStatus"></span></div><div id="results"></div></section>
+<section id="mytest" class="page"><div class="panel"><p class="eyebrow">YOUR UPLOADED MATERIAL</p><h2>My Test 1</h2><p>Your uploaded audio is included here. Keep the MP3 inside the <code>assets</code> folder.</p><div class="audio-box">
+<audio id="myTestAudio" controls preload="metadata"><source src="./assets/my-test-1.mp3" type="audio/mpeg">Your browser does not support MP3 audio.</audio>
+<button type="button" id="playAudioBtn" class="primary-btn">▶ Play Test 1 Audio</button>
+<p id="audioStatus" class="audio-status">Loading audio…</p>
+</div><div id="audioStatus" class="audio-status" role="status"></div><div class="notice">The PDF material you supplied was not copied into the app because it contains copyrighted test content. You can add material you own or have permission to use.</div></div></section>
+<section id="tips" class="page"><div class="panel"><p class="eyebrow">LISTENING STRATEGY</p><h2>Quick IELTS Listening tips</h2><div class="tipgrid"><article><b>Before listening</b><p>Read the questions, underline key words, and predict the type of answer.</p></article><article><b>While listening</b><p>Follow the question order. If you miss one answer, move on instead of getting stuck.</p></article><article><b>Spelling</b><p>Check spelling, plurals, numbers, dates, and word limits carefully.</p></article><article><b>After the test</b><p>Review every wrong answer and identify whether the problem was vocabulary, attention, spelling, or prediction.</p></article></div></div></section>
+<section id="pdfMaterialPage" class="page">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR MATERIAL</span>
+        <h2>IELTS Listening PDF</h2>
+        <p>Your authorized PDF is included directly in this app.</p>
+      </div>
+      <div class="card">
+        <p><strong>Practice Tests 1–41</strong> and the accompanying material are available in the original PDF.</p>
+        <div class="button-row">
+          <a class="primary-btn" href="./assets/ielts-listening-material.pdf" target="_blank" rel="noopener">Open PDF</a>
+          <a class="secondary-btn" href="./assets/ielts-listening-material.pdf" download>Save PDF</a>
+        </div>
+        <div class="pdf-frame-wrap">
+          <iframe class="pdf-frame" src="./assets/ielts-listening-material.pdf" title="IELTS Listening Material"></iframe>
+        </div>
+      </div>
+    </section>
+</main><footer>IELTS Listening Lab • Original practice content • Runs locally in your browser</footer><script src="data.js"></script><script src="app.js"></script></body></html>
